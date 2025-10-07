@@ -10,7 +10,7 @@ source:
   sha256: 8b57ed7b2a530206f3d70e6579bbff9c90d984aac9f1d357d1f6fecfc1ee3e9e
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310 or py>313]
   entry_points:
     - cellpy=cellpy.cli:cli
