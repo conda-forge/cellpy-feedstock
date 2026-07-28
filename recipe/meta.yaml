@@ -1,5 +1,5 @@
 {% set name = "cellpy" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e9c9bfd6c1f66d4995f3af6425e52570bc4b12d6232caa024bd7b1c3beb9b39
+  sha256: 731ca9dac4b6b67f31ea193e5e761c365b92a5d25968d20d7857ae8da7b753fa
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - uv-dynamic-versioning >=0.7.0
   run:
     - python
-    # PyPI [project.dependencies] (conda names) — cellpy 2.0.0
+    # PyPI [project.dependencies] (conda names) — cellpy 2.1.0
     - cellpycore ==0.2.4
     - charset-normalizer
     - cookiecutter
