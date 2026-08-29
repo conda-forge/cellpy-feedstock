@@ -26,12 +26,13 @@ requirements:
     - uv-dynamic-versioning >=0.7.0
   run:
     - python
-    # PyPI [project.dependencies] (conda names) — cellpy 2.1.0
+    # PyPI [project.dependencies] (conda names) — cellpy 2.1.3
     - cellpycore ==0.2.4
     - charset-normalizer
     - cookiecutter
     - dateparser
     - defusedxml
+    - ipykernel
     - jinja2-time
     - matplotlib-base
     - numpy
@@ -57,9 +58,9 @@ requirements:
     - universal-pathlib >=0.3.10
     - xmltodict
     - sqlalchemy-access >=2.0.2  # [win]
-    # Conda UX extras historically bundled with cellpy (optional on PyPI)
+    # Conda UX extras historically bundled with cellpy (optional on PyPI).
+    # pytables/hdf5 stay — conda still ships legacy HDF5 support.
     - hdf5 >=1.14
-    - ipykernel
     - ipython
     - ipywidgets
     - jupyterlab
